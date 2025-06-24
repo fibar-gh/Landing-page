@@ -1,0 +1,1139 @@
+/* Reset default styles and set global font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Slab", serif;
+}
+
+/* Prevent horizontal overflow */
+body {
+    overflow-x: hidden;
+}
+
+/* Header styles */
+.header {
+    width: 100%;
+    height: 12vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f7f7f7;
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+
+/* Navigation styles */
+.nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav ul li {
+    margin: 0 10px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+}
+
+.nav ul li a:hover,
+.auth a:hover {
+    color: #344cb7;
+}
+
+/* Authentication section styles */
+.auth {
+    display: flex;
+    align-items: center;
+}
+
+.auth a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #000;
+}
+
+.auth button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #344cb7;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+/* Responsive styles for screens up to 768px */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav ul li {
+        margin: 10px 0;
+    }
+
+    .auth {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .auth a {
+        margin: 10px 0;
+    }
+
+    .auth button {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+/* Responsive styles for screens between 769px and 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .header {
+        padding: 0 30px;
+    }
+
+    .nav ul li a {
+        font-size: 16px;
+    }
+
+    .auth button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
+/* Responsive styles for screens between 1025px and 1440px */
+@media (min-width: 1025px) and (max-width: 1440px) {
+    .header {
+        padding: 0 40px;
+    }
+
+    .nav ul li a {
+        font-size: 17px;
+    }
+
+    .auth button {
+        padding: 9px 18px;
+        font-size: 15px;
+    }
+}
+
+/* Responsive styles for screens 1441px and above */
+@media (min-width: 1441px) {
+    .header {
+        padding: 0 50px;
+    }
+
+    .nav ul li a {
+        font-size: 18px;
+    }
+
+    .auth button {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+}
+
+/* Hero section styles */
+.hero {
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 100px 0;
+}
+
+.hero-content {
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 50px;
+    margin: 50px 0 18px 0;
+    width: 650px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    width: 650px;
+}
+
+.hero-content span {
+    text-decoration: none;
+    color: black;
+    border: 1px solid #344cb7;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 18px;
+    margin: 50px 0;
+}
+
+.hero-content button {
+    text-decoration: none;
+    color: white;
+    background-color: #344cb7;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 18px;
+    border: none;
+    margin: 20px 0 50px 0;
+}
+
+/* Responsive styles for screens up to 768px */
+@media (max-width: 768px) {
+    .hero {
+        height: auto;
+        padding: 50px 20px;
+        overflow: hidden;
+    }
+
+    .hero-content h1,
+    .hero-content p,
+    .hero-content span,
+    .hero-content button {
+        width: calc(100% - 40px);
+        margin: 20px;
+        font-size: 16px;
+    }
+
+    .hero-content h1 {
+        font-size: 36px;
+    }
+
+    .hero-content p {
+        margin-bottom: 10px;
+    }
+
+    .hero-content span,
+    .hero-content button {
+        padding: 10px;
+        margin: 10px 0;
+    }
+}
+
+/* Responsive styles for screens between 769px and 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .hero-content h1 {
+        font-size: 40px;
+        width: 600px;
+    }
+
+    .hero-content p,
+    .hero-content span,
+    .hero-content button {
+        font-size: 17px;
+        width: 600px;
+    }
+}
+
+/* Responsive styles for screens between 1025px and 1440px */
+@media (min-width: 1025px) and (max-width: 1440px) {
+    .hero-content h1 {
+        font-size: 45px;
+        width: 650px;
+    }
+
+    .hero-content p,
+    .hero-content span,
+    .hero-content button {
+        font-size: 18px;
+        width: 650px;
+    }
+}
+
+/* Responsive styles for screens 1441px and above */
+@media (min-width: 1441px) {
+    .hero-content h1 {
+        font-size: 50px;
+        width: 700px;
+    }
+
+    .hero-content p,
+    .hero-content span,
+    .hero-content button {
+        font-size: 20px;
+        width: 700px;
+    }
+}
+
+/* About section styles */
+.about {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #f7f7f7;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+.about h1 {
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+    font-size: 30px;
+}
+
+.about div {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+
+.about div img {
+    margin-right: 10px;
+}
+
+.about div span {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.about span h2 {
+    margin: 5px 0;
+    font-size: 20px;
+    text-align: start;
+}
+
+.about span p {
+    font-size: 12px;
+    color: #344cb7;
+}
+
+/* Responsive styles for About section up to 768px */
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .about h1 {
+        font-size: 24px;
+        margin: 10px 0;
+    }
+
+    .about div {
+        flex-direction: column;
+        align-items: center;
+        margin: 10px 0;
+    }
+
+    .about div img,
+    .about span h2,
+    .about span p {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .about span h2 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .about span p {
+        font-size: 10px;
+        text-align: center;
+    }
+}
+
+/* Responsive styles for About section between 769px and 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .about h1 {
+        font-size: 28px;
+    }
+
+    .about span h2 {
+        font-size: 18px;
+    }
+
+    .about span p {
+        font-size: 12px;
+    }
+}
+
+/* Responsive styles for About section between 1025px and 1440px */
+@media (min-width: 1025px) and (max-width: 1440px) {
+    .about h1 {
+        font-size: 30px;
+    }
+
+    .about span h2 {
+        font-size: 20px;
+    }
+
+    .about span p {
+        font-size: 14px;
+    }
+}
+
+/* Responsive styles for About section 1441px and above */
+@media (min-width: 1441px) {
+    .about h1 {
+        font-size: 32px;
+    }
+
+    .about span h2 {
+        font-size: 22px;
+    }
+
+    .about span p {
+        font-size: 16px;
+    }
+}
+
+/* Programs section styles */
+.programs {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.programs div {
+    width: 300px;
+    margin-right: 50px;
+}
+
+.programs div img {
+    width: 500px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.programs div h1 {
+    font-size: 30px;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+.programs div p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.note {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.note span {
+    color: #344cb7;
+}
+
+/* Responsive styles for Programs section up to 768px */
+@media (max-width: 768px) {
+    .programs {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .programs div {
+        width: 100%;
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+
+    .programs div img {
+        width: 100%;
+        height: auto;
+    }
+
+    .programs div h1 {
+        font-size: 24px;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .programs div p {
+        font-size: 16px;
+        margin-bottom: 30px;
+        width: 90%;
+        text-align: center;
+    }
+}
+
+/* Responsive styles for Programs section between 769px and 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .programs {
+        flex-direction: row;
+        padding: 40px;
+    }
+
+    .programs div {
+        width: 45%;
+        margin-bottom: 20px;
+        margin-right: 5%;
+    }
+
+    .programs div img {
+        width: 100%;
+        height: auto;
+    }
+
+    .programs div h1 {
+        font-size: 26px;
+        margin: 15px 0;
+        text-align: left;
+    }
+
+    .programs div p {
+        font-size: 18px;
+        margin-bottom: 30px;
+        width: 100%;
+        text-align: left;
+    }
+}
+
+/* Responsive styles for Programs section between 1025px and 1440px */
+@media (min-width: 1025px) and (max-width: 1440px) {
+    .programs {
+        flex-direction: row;
+        padding: 60px;
+    }
+
+    .programs div {
+        width: 30%;
+        margin-bottom: 20px;
+        margin-right: 3.33%;
+    }
+
+    .programs div img {
+        width: 100%;
+        height: auto;
+    }
+
+    .programs div h1 {
+        font-size: 28px;
+        margin: 20px 0;
+        text-align: left;
+    }
+
+    .programs div p {
+        font-size: 20px;
+        margin-bottom: 30px;
+        width: 100%;
+        text-align: left;
+    }
+}
+
+/* Responsive styles for Programs section 1441px and above */
+@media (min-width: 1441px) {
+    .programs {
+        flex-direction: row;
+        padding: 80px;
+    }
+
+    .programs div {
+        width: 25%;
+        margin-bottom: 20px;
+        margin-right: 2.5%;
+    }
+
+    .programs div img {
+        width: 100%;
+        height: auto;
+    }
+
+    .programs div h1 {
+        font-size: 30px;
+        margin: 25px 0;
+        text-align: left;
+    }
+
+    .programs div p {
+        font-size: 22px;
+        margin-bottom: 30px;
+        width: 100%;
+        text-align: left;
+    }
+}
+
+.sets {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  padding: 40px 0;
+  text-align: center;
+  position: relative;
+}
+
+.sets h1 {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.sets-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f7f7f7;
+  padding: 70px;
+  width: 800px;
+
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative; /* Ensure arrows are positioned relative to this container */
+}
+
+.sets-container img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.sets-container h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.sets-container p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.5;
+  text-align: center;
+}
+.left-arrow,
+.right-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  width: 50px;
+  background-color: #fbfbfb;
+  border: none;
+  border-radius: 50%;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.left-arrow {
+  left: 250px; /* Adjust this value as needed */
+}
+
+.right-arrow {
+  right: 250px; /* Adjust this value as needed */
+}
+
+@media (max-width: 768px) {
+  .sets-container {
+    width: calc(100% - 40px);
+    padding: 20px;
+  }
+
+  .left-arrow,
+  .right-arrow {
+    width: 40px;
+    height: 40px;
+  }
+
+  .left-arrow {
+    left: 20px;
+  }
+
+  .right-arrow {
+    right: 20px;
+  }
+}
+
+/* Community section styles */
+.community {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f7f7f7;
+    padding: 40px 0;
+    text-align: center;
+}
+
+/* Mentor section styles */
+.mentor {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f7f7f7;
+    padding: 40px 0;
+    text-align: center;
+}
+
+/* Community section heading styles */
+.community h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+/* Community content container styles */
+.community-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 80px;
+    padding-bottom: 200px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Community content image styles */
+.community-content img {
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+    margin-right: 50px;
+}
+
+/* Star icon styles */
+.star {
+    position: absolute;
+    z-index: -1;
+    top: 12%; 
+    left: 70%;
+    transform: translate(-50%, -50%);
+    width: 50px; 
+    height: 50px;
+}
+
+/* Text container styles */
+.text-container {
+    width: 350px;
+    margin-right: 50px;
+    text-align: start;
+}
+
+/* Text container list styles */
+.text-container ul {
+    width: 300px;
+    margin-top: 20px;
+    text-align: start;
+    align-items: center;
+}
+
+/* Grow career section styles */
+.grow-career {
+    width: 1000px;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: center;
+    background-color: #344cb7;
+    border-radius: 20px;
+}
+
+/* Grow career content styles */
+.grow-career div {
+    width: 400px;
+    padding-left: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Grow career heading styles */
+.grow-career div h2 {
+    color: white;
+    font-size: 30px;
+    margin-bottom: 20px;
+    width: 200px;
+    text-align: start;
+}
+
+/* Grow career link styles */
+.grow-career div a {
+    display: inline-block;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 10px;
+    background-color: #344cb7;
+    border-radius: 10px;
+    border: 2px solid white;
+    cursor: pointer;
+    text-decoration: none;
+    width: 200px;
+}
+
+/* Grow career paragraph styles */
+.grow-career div p {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 20px;
+    width: 200px;
+    text-align: start;
+}
+
+/* Grow career image styles */
+.grow-career img {
+    width: 400px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+/* Mentor section heading styles */
+.mentor h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    padding-top: 50px;
+}
+
+/* Mentor section paragraph styles */
+.mentor p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    width: 550px;
+    margin-top: 0;
+}
+
+/* Mentor area container styles */
+.mentor-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+/* Mentor container styles */
+.mentor-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    margin: 10px;
+    padding: 70px;
+    width: 250px;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Mentor container hover effect */
+.mentor-container:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Mentor container content styles */
+.mentor-container div {
+    width: 200px;
+}
+
+/* Mentor container image styles */
+.mentor-container img {
+    margin-top: 0;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+/* Mentor container heading styles */
+.mentor-container h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Edit text styles */
+.edit {
+    font-size: 20px;
+    color: #344cb7;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Edit text secondary styles */
+.edit-2 {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Social media icon styles */
+.social img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    border-radius: 0;
+    margin-bottom: 0;
+}
+
+/* Social media icon styles */
+.social i {
+    font-size: 30px;
+    margin-right: 10px;
+    border-radius: 0;
+    margin-bottom: 0;
+}
+
+/* Responsive styles for screens up to 768px */
+@media (max-width: 768px) {
+    .community h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .community-content {
+        flex-direction: column;
+        margin-top: 40px;
+        padding-bottom: 100px;
+    }
+
+    .community-content img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+        margin-top: 40px;
+        z-index: 1;
+    }
+
+    .text-container {
+        width: 100%;
+        margin-right: 0;
+        margin-left: 50px;
+        line-height: 1.5rem;
+        text-align: center;
+        padding-bottom: 150px;
+    }
+
+    .text-container h1 {
+        text-align: start;
+        font-size: 30px;
+        padding-bottom: 20px;
+    }
+
+    .text-container ul {
+        width: 90%;
+        margin-top: 10px;
+        text-align: start;
+    }
+
+    .text-container ul li {
+        text-align: start;
+    }
+
+    .grow-career {
+        flex-direction: column;
+        width: calc(100% - 40px);
+        height: auto;
+        padding: 20px;
+    }
+
+    .grow-career div {
+        width: 100%;
+        padding-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .grow-career div h2,
+    .grow-career div p,
+    .grow-career div a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .grow-career img {
+        width: 100%;
+        height: auto;
+    }
+
+    .mentor {
+        padding: 20px;
+    }
+
+    .mentor h1 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .mentor p {
+        font-size: 16px;
+        width: calc(100% - 40px);
+        margin-bottom: 20px;
+    }
+
+    .mentor-area {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mentor-container {
+        width: calc(100% - 40px);
+        padding: 20px;
+        margin: 10px 0;
+    }
+
+    .star {
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 50px;
+        height: 50px;
+    }
+}
+
+/* Footer section styles */
+.footer {
+    width: 100vw;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row; 
+    align-items: center;
+    background-color: #101828;
+    padding: 60px 0;
+    text-align: center;
+    margin-top: 100px;
+}
+
+/* Footer content styles */
+.footer div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start; 
+    margin: 0 60px; 
+}
+
+/* Footer list styles */
+.footer div ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+/* Footer list item styles */
+.footer div ul li {
+    margin: 10px 0;
+    text-align: start;
+}
+
+/* Footer link styles */
+.footer div ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+/* Footer paragraph styles */
+.footer div p {
+    color: white;
+    font-size: 16px;
+    text-align: start;
+}
+
+/* Footer heading styles */
+.footer div h2 {
+    color: white;
+    font-size: 24px;
+}
+
+/* Footer main heading styles */
+.footer div h1 {
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+/* Footer content container styles */
+.footer-content {
+    width: 300px;
+}
+
+/* Footer links container styles */
+.footer-links {
+    width: 200px;
+}
+
+/* Footer bottom section styles */
+.footer-bottom {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #101828;
+    color: white;
+    font-size: 16px;
+    margin-top: 1px;
+}
+
+/* Footer bottom icon styles */
+.footer-bottom span i {
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    margin: 10px;
+}
+
+/* Responsive styles for footer section up to 768px */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    .footer div {
+        align-items: center;
+        margin: 20px 0;
+    }
+
+    .footer div h1,
+    .footer div h2,
+    .footer div p,
+    .footer div ul li a {
+        text-align: center;
+    }
+
+    .footer-content,
+    .footer-links {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    .footer-bottom span i {
+        margin: 10px 0;
+    }
+
+    .footer-content p {
+        text-align: center;
+        width: 60%;
+    }
+}
